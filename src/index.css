@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fade-in-slide {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-slide {
+  animation: fade-in-slide 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-delayed {
+  animation-delay: var(--delay, 0ms);
+}
+
+/* Gradient hover effect */
+.gradient-hover {
+  background: linear-gradient(90deg, #c084fc, #a855f7, #9333ea);
+  background-size: 200% 200%;
+  transition: all 0.4s ease;
+}
+.gradient-hover:hover {
+  background-position: right center;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(147, 51, 234, 0.3);
+}
+
+/* Resource card hover glow */
+.resource-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.resource-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(128, 90, 213, 0.2);
+}
+
+/* Custom input focus ring */
+.custom-focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(128, 90, 213, 0.4);
+}
+
+/* Category Badge */
+.category-badge {
+  background: rgba(147, 51, 234, 0.1);
+  color: #9333ea;
+}
+.category-badge:hover {
+  background: rgba(147, 51, 234, 0.2);
+}
