@@ -1,5 +1,16 @@
 import React, { useState } from 'react';
-import { Clock, Calendar as CalendarIcon, CheckSquare, ListTodo, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { 
+  Clock, 
+  Calendar as CalendarIcon, 
+  CheckSquare, 
+  ListTodo, 
+  ChevronRight,
+  BookOpen,
+  Book,
+  Map,
+  User
+} from 'lucide-react';
 
 const motivationalQuotes = [
   {
@@ -11,11 +22,11 @@ const motivationalQuotes = [
     author: 'Winston Churchill',
   },
   {
-    text: 'Don’t watch the clock; do what it does. Keep going.',
+    text: 'Don't watch the clock; do what it does. Keep going.',
     author: 'Sam Levenson',
   },
   {
-    text: 'Believe you can and you’re halfway there.',
+    text: 'Believe you can and you're halfway there.',
     author: 'Theodore Roosevelt',
   },
   {
@@ -27,7 +38,7 @@ const motivationalQuotes = [
     author: 'Ralph Waldo Emerson',
   },
   {
-    text: 'Your time is limited, don’t waste it living someone else’s life.',
+    text: 'Your time is limited, don't waste it living someone else's life.',
     author: 'Steve Jobs',
   },
   {
@@ -39,7 +50,7 @@ const motivationalQuotes = [
     author: 'Henry David Thoreau',
   },
   {
-    text: 'Hard work beats talent when talent doesn’t work hard.',
+    text: 'Hard work beats talent when talent doesn't work hard.',
     author: 'Tim Notke',
   },
   {
@@ -51,15 +62,15 @@ const motivationalQuotes = [
     author: 'Norman Vaughan',
   },
   {
-    text: 'It’s not whether you get knocked down, it’s whether you get up.',
+    text: 'It's not whether you get knocked down, it's whether you get up.',
     author: 'Vince Lombardi',
   },
   {
-    text: 'If you’re going through hell, keep going.',
+    text: 'If you're going through hell, keep going.',
     author: 'Winston Churchill',
   },
   {
-    text: 'The harder you work for something, the greater you’ll feel when you achieve it.',
+    text: 'The harder you work for something, the greater you'll feel when you achieve it.',
     author: 'Anonymous',
   },
   {
@@ -67,11 +78,11 @@ const motivationalQuotes = [
     author: 'Winston Churchill',
   },
   {
-    text: 'You don’t have to be great to start, but you have to start to be great.',
+    text: 'You don't have to be great to start, but you have to start to be great.',
     author: 'Zig Ziglar',
   },
   {
-    text: 'Go the extra mile. It’s never crowded there.',
+    text: 'Go the extra mile. It's never crowded there.',
     author: 'Dr. Wayne D. Dyer',
   },
   {
@@ -79,7 +90,7 @@ const motivationalQuotes = [
     author: 'Theodore Roosevelt',
   },
   {
-    text: 'Don’t stop when you’re tired. Stop when you’re done.',
+    text: 'Don't stop when you're tired. Stop when you're done.',
     author: 'Wesley Snipes',
   },
   {
@@ -91,11 +102,11 @@ const motivationalQuotes = [
     author: 'Charles Kingsleigh',
   },
   {
-    text: 'Opportunities don’t happen. You create them.',
+    text: 'Opportunities don't happen. You create them.',
     author: 'Chris Grosser',
   },
   {
-    text: 'Don’t be pushed around by the fears in your mind. Be led by the dreams in your heart.',
+    text: 'Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.',
     author: 'Roy T. Bennett',
   },
   {
@@ -111,7 +122,7 @@ const motivationalQuotes = [
     author: 'C.S. Lewis',
   },
   {
-    text: 'It always seems impossible until it’s done.',
+    text: 'It always seems impossible until it's done.',
     author: 'Nelson Mandela',
   },
   {
@@ -123,7 +134,7 @@ const motivationalQuotes = [
     author: 'Chinese Proverb',
   },
   {
-    text: 'Don’t wait. The time will never be just right.',
+    text: 'Don't wait. The time will never be just right.',
     author: 'Napoleon Hill',
   },
   {
@@ -139,11 +150,11 @@ const motivationalQuotes = [
     author: 'Lao Tzu',
   },
   {
-    text: 'Don’t limit your challenges. Challenge your limits.',
+    text: 'Don't limit your challenges. Challenge your limits.',
     author: 'Jerry Dunn',
   },
   {
-    text: 'You miss 100% of the shots you don’t take.',
+    text: 'You miss 100% of the shots you don't take.',
     author: 'Wayne Gretzky',
   },
   {
@@ -179,11 +190,11 @@ const motivationalQuotes = [
     author: 'Dale Carnegie',
   },
   {
-    text: 'Don’t wish it were easier. Wish you were better.',
+    text: 'Don't wish it were easier. Wish you were better.',
     author: 'Jim Rohn',
   },
   {
-    text: 'Even if you are on the right track, you’ll get run over if you just sit there.',
+    text: 'Even if you are on the right track, you'll get run over if you just sit there.',
     author: 'Will Rogers',
   },
   {
@@ -199,7 +210,7 @@ const motivationalQuotes = [
     author: 'Theodore Roosevelt',
   },
   {
-    text: 'Don’t count the days. Make the days count.',
+    text: 'Don't count the days. Make the days count.',
     author: 'Muhammad Ali',
   },
   {
@@ -297,8 +308,8 @@ const Dashboard = () => {
             order={4}
           />
           <QuickAccessCard
-            icon={CalendarIcon}
-            title="Resource"
+            icon={BookOpen}
+            title="Resources"
             description="Access knowledge and tools to elevate your learning"
             link="/resources"
             bgColor="bg-gradient-to-br from-purple-50 to-white"
@@ -307,7 +318,7 @@ const Dashboard = () => {
             order={5}
           />
           <QuickAccessCard
-            icon={CalendarIcon}
+            icon={Book}
             title="Journal"
             description="Capture your thoughts and track your journey daily."
             link="/journal"
@@ -317,7 +328,7 @@ const Dashboard = () => {
             order={6}
           />
           <QuickAccessCard
-            icon={CalendarIcon}
+            icon={Map}
             title="Roadmaps"
             description="Navigate your path with clear and structured guides."
             link="/roadmaps"
@@ -325,6 +336,16 @@ const Dashboard = () => {
             accentColor="text-purple-600"
             borderColor="border-purple-100"
             order={7}
+          />
+          <QuickAccessCard
+            icon={User}
+            title="Profile"
+            description="Manage your account and personal settings."
+            link="/profile"
+            bgColor="bg-gradient-to-br from-purple-100 to-white"
+            accentColor="text-purple-600"
+            borderColor="border-purple-200"
+            order={8}
           />
         </div>
       </div>
@@ -342,8 +363,8 @@ const QuickAccessCard = ({
   borderColor,
   order 
 }) => (
-  <a
-    href={link}
+  <Link
+    to={link}
     className={`
       group relative p-6 rounded-2xl border ${borderColor} ${bgColor}
       shadow-lg transition-all duration-300
@@ -372,7 +393,7 @@ const QuickAccessCard = ({
       <span>Get Started</span>
       <ChevronRight className="w-4 h-4" />
     </div>
-  </a>
+  </Link>
 );
 
 export default Dashboard;
