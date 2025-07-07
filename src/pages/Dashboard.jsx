@@ -26,7 +26,7 @@ const motivationalQuotes = [
     author: 'Sam Levenson',
   },
   {
-    text: 'Believe you can and you're halfway there.',
+    text: 'Believe you can and you\'re halfway there.',
     author: 'Theodore Roosevelt',
   },
   {
@@ -38,7 +38,7 @@ const motivationalQuotes = [
     author: 'Ralph Waldo Emerson',
   },
   {
-    text: 'Your time is limited, don't waste it living someone else's life.',
+    text: 'Your time is limited, don\'t waste it living someone else\'s life.',
     author: 'Steve Jobs',
   },
   {
@@ -62,15 +62,15 @@ const motivationalQuotes = [
     author: 'Norman Vaughan',
   },
   {
-    text: 'It's not whether you get knocked down, it's whether you get up.',
+    text: 'It\'s not whether you get knocked down, it\'s whether you get up.',
     author: 'Vince Lombardi',
   },
   {
-    text: 'If you're going through hell, keep going.',
+    text: 'If you\'re going through hell, keep going.',
     author: 'Winston Churchill',
   },
   {
-    text: 'The harder you work for something, the greater you'll feel when you achieve it.',
+    text: 'The harder you work for something, the greater you\'ll feel when you achieve it.',
     author: 'Anonymous',
   },
   {
@@ -78,11 +78,11 @@ const motivationalQuotes = [
     author: 'Winston Churchill',
   },
   {
-    text: 'You don't have to be great to start, but you have to start to be great.',
+    text: 'You don\'t have to be great to start, but you have to start to be great.',
     author: 'Zig Ziglar',
   },
   {
-    text: 'Go the extra mile. It's never crowded there.',
+    text: 'Go the extra mile. It\'s never crowded there.',
     author: 'Dr. Wayne D. Dyer',
   },
   {
@@ -90,7 +90,7 @@ const motivationalQuotes = [
     author: 'Theodore Roosevelt',
   },
   {
-    text: 'Don't stop when you're tired. Stop when you're done.',
+    text: 'Don\'t stop when you\'re tired. Stop when you\'re done.',
     author: 'Wesley Snipes',
   },
   {
@@ -102,11 +102,11 @@ const motivationalQuotes = [
     author: 'Charles Kingsleigh',
   },
   {
-    text: 'Opportunities don't happen. You create them.',
+    text: 'Opportunities don\'t happen. You create them.',
     author: 'Chris Grosser',
   },
   {
-    text: 'Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.',
+    text: 'Don\'t be pushed around by the fears in your mind. Be led by the dreams in your heart.',
     author: 'Roy T. Bennett',
   },
   {
@@ -122,7 +122,7 @@ const motivationalQuotes = [
     author: 'C.S. Lewis',
   },
   {
-    text: 'It always seems impossible until it's done.',
+    text: 'It always seems impossible until it\'s done.',
     author: 'Nelson Mandela',
   },
   {
@@ -134,7 +134,7 @@ const motivationalQuotes = [
     author: 'Chinese Proverb',
   },
   {
-    text: 'Don't wait. The time will never be just right.',
+    text: 'Don\'t wait. The time will never be just right.',
     author: 'Napoleon Hill',
   },
   {
@@ -150,11 +150,11 @@ const motivationalQuotes = [
     author: 'Lao Tzu',
   },
   {
-    text: 'Don't limit your challenges. Challenge your limits.',
+    text: 'Don\'t limit your challenges. Challenge your limits.',
     author: 'Jerry Dunn',
   },
   {
-    text: 'You miss 100% of the shots you don't take.',
+    text: 'You miss 100% of the shots you don\'t take.',
     author: 'Wayne Gretzky',
   },
   {
@@ -190,11 +190,11 @@ const motivationalQuotes = [
     author: 'Dale Carnegie',
   },
   {
-    text: 'Don't wish it were easier. Wish you were better.',
+    text: 'Don\'t wish it were easier. Wish you were better.',
     author: 'Jim Rohn',
   },
   {
-    text: 'Even if you are on the right track, you'll get run over if you just sit there.',
+    text: 'Even if you are on the right track, you\'ll get run over if you just sit there.',
     author: 'Will Rogers',
   },
   {
@@ -210,7 +210,7 @@ const motivationalQuotes = [
     author: 'Theodore Roosevelt',
   },
   {
-    text: 'Don't count the days. Make the days count.',
+    text: 'Don\'t count the days. Make the days count.',
     author: 'Muhammad Ali',
   },
   {
