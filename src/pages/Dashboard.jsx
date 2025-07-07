@@ -50,7 +50,7 @@ const motivationalQuotes = [
     author: 'Henry David Thoreau',
   },
   {
-    text: 'Hard work beats talent when talent doesn't work hard.',
+    text: 'Hard work beats talent when talent doesn\'t work hard.',
     author: 'Tim Notke',
   },
   {
