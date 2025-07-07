@@ -22,7 +22,7 @@ const motivationalQuotes = [
     author: 'Winston Churchill',
   },
   {
-    text: 'Don't watch the clock; do what it does. Keep going.',
+    text: 'Don\'t watch the clock; do what it does. Keep going.',
     author: 'Sam Levenson',
   },
   {
